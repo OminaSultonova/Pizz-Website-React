@@ -1,0 +1,61 @@
+.about {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutTop {
+    width: 100%;
+    height: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .aboutBottom {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .aboutBottom p {
+    
+      font-size: 16px; /* Default font size */
+      line-height: 1.5; /* Default line height */
+      text-align: center;
+      margin-left: 40px;  /* Add margin to the left side */
+      margin-right: 40px; /* Add margin to the right side */
+
+  }
+
+ /* Media query for smaller screens (e.g., when the width is less than 768px) */
+@media screen and (max-width: 767px) {
+  .aboutBottom p {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    line-height: 1.3; /* Adjust line height for smaller screens */
+    margin: 0 10px; /* Add some horizontal margin to prevent text from touching the edges */
+  }
+}
+
+/* Media query for even smaller screens (e.g., when the width is less than 480px) */
+@media screen and (max-width: 479px) {
+  .aboutBottom p {
+    font-size: 12px; /* Further adjust font size for very small screens */
+    line-height: 1.2; /* Further adjust line height for very small screens */
+    margin: 0 5px; /* Reduce horizontal margin for very small screens */
+  }
+}
+  
+  .about .aboutBottom h1 {
+    font-weight: 400;
+    font-size: 70px;
+    color: black;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-40px);
+  }
